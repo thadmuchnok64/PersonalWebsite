@@ -1,0 +1,380 @@
+@font-face {
+    font-family: "The Bold Font";
+    src: url("fonts/theboldfont.ttf");
+}
+@font-face{
+    font-family: "Ellando";
+    src: url("fonts/Ellando.otf");
+}
+@font-face {
+    font-family: "Louis George";
+    src: url("fonts/Louis George Cafe.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Condensed.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "The Bold Font",Arial, Helvetica, sans-serif;
+    font-size: 55px;
+    letter-spacing: 10px;
+    
+}
+h2 {
+    color: rgb(165, 85, 165);
+    font-size: 26px;
+    text-align: center;
+    font-family: "Louis George",Arial, Helvetica, sans-serif;
+    letter-spacing: .5px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+.hp2Box{
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 24px;
+    color: rgb(165, 85, 165);
+    font-size: 26px;
+    font-family: "Louis George",Arial, Helvetica, sans-serif;
+    letter-spacing: .5px;
+    word-spacing: 3px;
+    font-weight: bolder;
+    margin-left: 22px;
+}
+
+.subTitle{
+    color: rgb(87, 62, 133);
+    letter-spacing: 8px;
+    font-size: 32px;
+    text-align: center;
+    font-family: "Roboto","Louis George",Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+.subTitle2{
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    color: rgb(87, 62, 133,.8);
+    text-align: center;
+    font-family: "Roboto","Louis George",Arial, Helvetica, sans-serif;
+    word-spacing: 3px;
+    margin-top: 0px;
+    font-weight: lighter;
+}
+
+.button {
+    color: rgb(165, 85, 165);
+    letter-spacing: 1.5px;
+    transition: .2s ease;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto","The Bold Font",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.button:hover {
+    color: rgb(238, 151, 79);
+    letter-spacing: 1.5px;
+    transition: .3s ease;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto","The Bold Font",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight:bolder;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.imageButton{
+    filter: hue-rotate(0) brightness(100%);
+    height: 30px;
+    width: 30px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 6px;
+    float:left;
+    transition: .3s ease;
+}
+.imageButton:hover{
+    filter: hue-rotate(100deg) brightness(120%);
+    transition: .3s ease;
+    height: 40px;
+    width: 40px;
+    margin-top: 1px;
+    float:left;
+
+
+    margin-bottom: 1px;
+
+
+
+}
+/*
+.currentButton{
+    color: rgb(255, 135, 40);
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto","The Bold Font", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.currentButton:hover{
+    color: rgb(255, 255, 255);
+    transition: .3s ease;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Roboto","The Bold Font",Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-weight:bolder;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+*/
+body{
+    margin: 0px;
+    padding:0px;
+    background-image: url("images/back4k.png");
+     /*linear-gradient(rgb(2, 2, 2),rgb(2, 0, 2));
+    /*
+    background-repeat: no-repeat;
+    */
+    
+    min-height: 100%;
+    /*min-width: 1024px;*/
+    max-width: 100% !important;
+    width: 100%;
+    overflow-x: hidden !important;
+    position: relative;
+    height: 101vh;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    background-attachment: fixed; 
+    background-position: fixed;
+    background-repeat:no-repeat;
+    background-size: cover;
+    display: block;
+    
+}
+p{
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: "Louis George",Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: linear-gradient(rgb(0, 0, 5),rgb(15,15,20));
+    width: 102vw;
+    padding-top: 5px;
+    margin-top: 0px;
+        display: block;
+    overflow: auto;
+    height: 100vh;
+}
+nav {
+    padding-top: 20px;
+    background-image:linear-gradient(rgb(0,0,0),rgb(0, 0, 0));
+    height: fit-content;
+    width: 100%;
+    padding-top: 5px;
+    text-align: center;
+
+}
+main{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    margin-top: 0px;
+    padding-left: 26px;
+    padding-right: 26px;
+    background-image: linear-gradient(rgb(2,2,10,0),rgb(5, 5, 15,0));
+    display: block;
+    overflow: auto;
+    width: 100%;
+    text-align: center;
+}
+footer {
+    background-color:rgb(15, 15, 20);
+    height: 60px;
+    width: 100%;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    width: auto;
+
+}
+.windowBox{
+    width:  600px;
+    height: 300px;
+    background-color: indigo;
+}
+.contentBox{
+    padding: 10px;
+    width: 80%;
+    padding: 12px;
+    margin:auto;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    height: fit-content;
+    
+    background-image: linear-gradient(rgb(20, 0, 35,.95),rgb(10, 0, 20,.95));
+    display:  inline-block;
+
+}
+.gameBox{
+    transition: .3s ease;
+    width: 200px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    height: 250px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95),rgba(182, 182, 182, 0.95));
+    display:  inline-block;
+    display: inline-block;
+    border: solid black;
+}
+.gameBox:hover{
+    transition: .3s ease;
+    width:215px;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    height: 265px;
+    background-image: linear-gradient(rgb(238, 177, 127),rgb(238, 151, 79));
+    display:  inline-block;
+    border: solid white;
+}
+.divButton{
+    transition: .3s ease;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95),rgba(182, 182, 182, 0.95));
+    border: solid black;
+    padding: 0px;
+    padding-top: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.divButton:hover{
+    transition: .3s ease;
+    background-image: linear-gradient(rgb(238, 177, 127),rgb(238, 151, 79));
+    border: solid white;
+}
+.textBox{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+
+}
+.imageFrame{
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(191, 191, 191));
+    display:  inline-block;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.imageFrame2{
+    padding: 4px;
+    margin: auto;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(191, 191, 191));
+    width: fit-content;
+    height: fit-content;
+
+}
+iframe{
+    align-self: center;
+    display:block;
+}
+.hyperlink{
+    color: rgb(165, 85, 165);
+    text-decoration: none;
+    transition: .1s ease;
+}
+.hyperlink:hover{
+    color: rgb(238, 151, 79);
+    transition: .1s ease;
+    text-decoration: none;
+}
+.barOfItems{
+    width: 300px;
+    height: 30px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: 10px;
+    float:right;
+    padding: 2px;
+    background-image: linear-gradient(rgb(87, 62, 133),rgb(96, 78, 129));
+}
+.point{
+    float:left;
+    margin: 2.5px;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(202, 202, 202));
+}
+.emp{
+    float:left;
+    margin: 2.5px;
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(rgb(35, 35, 50),rgb(0,0,0));
+}
+
+.sideBox{
+    max-width: 33vw;
+    float:right;
+}
+
+.sideTextBox{
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    max-width: 43vw;
+}
+
+@media screen and (max-width: 481px){
+
+    .sideBox{
+        max-width: 100%;
+    }
+    .sideTextBox{
+        padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    max-width: 100%;
+    }
+}
+.picOfMe{
+    width: 95%;
+    height: 100%;
+    max-height: 45vh;
+}
+@media screen and (min-width:2500px){
+    .picOfMe{
+        max-width: 400px;
+    }
+}
